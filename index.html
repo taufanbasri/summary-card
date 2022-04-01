@@ -20,20 +20,41 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="flex flex-col items-center justify-center mx-auto my-20 text-center font-red-hat lg:bg-[url('./images/pattern-background-desktop.svg')] bg-cover bg-pale-blue bg-[url('./images/pattern-backgound-mobile.svg')]">
+  <main class="max-w-xs pb-5 overflow-hidden bg-white rounded-lg mb-52">
+    <section class="mb-5">
+      <img src="./images/illustration-hero.svg" alt="">
+    
+      <div class="mx-5">
+        <h2 class="my-5 text-lg font-bold text-dark-blue">Order Summary</h2>
 
-  Order Summary
+      <p class="text-desaturated-blue">
+        You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+      </p>
+      </div>
+    </section>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <section class="flex justify-between p-5 mx-5 my-5 rounded-lg bg-very-pale-blue">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#DFE6FB"/>
+          <path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/>
+        </g>
+      </svg>
+      
+      <div class="flex flex-col">
+        <span class="font-bold text-dark-blue">Annual Plan</span>
+        <span class="text-desaturated-blue">$59.99/year</span>
+      </div>
+  
+      <button class="font-semibold underline text-bright-blue hover:no-underline hover:text-desaturated-blue">Change</button>
+    </section>
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+    <section class="flex flex-col gap-4 mx-5">
+      <button class="py-2 text-white rounded-lg shadow-xl bg-bright-blue hover:bg-desaturated-blue">Proceed to Payment</button>
+      <button class="font-bold text-desaturated-blue">Cancel Order</button>
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
